@@ -1,11 +1,6 @@
 package com.github.danielm94.easy;
 
-import lombok.AllArgsConstructor;
-import lombok.val;
-
 import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * Assume you are an awesome parent and want to give your children some cookies. But, you should give each child at most one cookie.

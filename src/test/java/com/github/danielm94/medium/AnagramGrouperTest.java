@@ -38,7 +38,7 @@ class AnagramGrouperTest {
     public void testExample1() {
         String[] input = {"eat", "tea", "tan", "ate", "nat", "bat"};
         List<List<String>> expected = Arrays.asList(
-                Arrays.asList("bat"),
+                List.of("bat"),
                 Arrays.asList("nat", "tan"),
                 Arrays.asList("ate", "eat", "tea")
         );
@@ -49,8 +49,8 @@ class AnagramGrouperTest {
     @Test
     public void testExample2() {
         String[] input = {""};
-        List<List<String>> expected = Arrays.asList(
-                Arrays.asList("")
+        List<List<String>> expected = List.of(
+                List.of("")
         );
 
         assertTrue(areEqualIgnoringOrder(expected, anagramGrouper.groupAnagrams(input)));
@@ -59,8 +59,8 @@ class AnagramGrouperTest {
     @Test
     public void testExample3() {
         String[] input = {"a"};
-        List<List<String>> expected = Arrays.asList(
-                Arrays.asList("a")
+        List<List<String>> expected = List.of(
+                List.of("a")
         );
 
         assertTrue(areEqualIgnoringOrder(expected, anagramGrouper.groupAnagrams(input)));
